@@ -281,7 +281,7 @@ const Catalog = () => {
 
                                 <div className="mt-12 pt-12 border-t border-agro-green/10 flex flex-col sm:flex-row gap-4">
                                     <button
-                                        onClick={() => window.location.href = '/letterhead.html'}
+                                        onClick={() => window.location.href = '/proforma_invoice.html'}
                                         className="flex-1 bg-agro-forest text-white py-5 rounded-2xl font-bold hover:bg-agro-green transition-all shadow-xl text-center cursor-pointer"
                                     >
                                         Generate Pro-Forma
