@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA AGRO NIG LTD - Pro-Forma Invoice</title>
+    <style>
+        :root {
+            --forest-green: #1B4332;
+            --agro-green: #2D6A4F;
+            --grain-gold: #D4A373;
+            --agro-cream: #F8F9FA;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f0f0;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .document-page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            background: white;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--agro-green);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--agro-green);
+        }
+
+        .company-info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: var(--forest-green);
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .company-info p {
+            margin: 2px 0 0;
+            color: var(--agro-green);
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .header-details {
+            text-align: right;
+            color: #666;
+            font-size: 10px;
+            line-height: 1.4;
+        }
+
+        .doc-title {
+            background: var(--forest-green);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .content {
+            padding: 30px 60px;
+            flex-grow: 1;
+            font-size: 13px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .info-block h3 {
+            color: var(--agro-green);
+            border-bottom: 1px solid var(--grain-gold);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .invoice-table th {
+            background: var(--agro-green);
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .invoice-table td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .invoice-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .total-section {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .total-row {
+            font-size: 18px;
+            color: var(--forest-green);
+            font-weight: bold;
+        }
+
+        .settlement-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: var(--agro-cream);
+            border-left: 4px solid var(--grain-gold);
+        }
+
+        .settlement-box h4 {
+            margin: 0 0 10px;
+            color: var(--forest-green);
+        }
+
+        .terms {
+            margin-top: 30px;
+            font-size: 11px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .signatories {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            padding: 20px 60px;
+            background: var(--agro-cream);
+            font-size: 10px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        [contenteditable="true"]:hover {
+            background: rgba(212, 163, 115, 0.1);
+            outline: 1px dashed var(--grain-gold);
+        }
+
+        @media print {
+            .document-page {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            body {
+                background: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="document-page">
+        <header class="header">
+            <div class="logo-section">
+                <img src="./logo_emblem.png" alt="Logo" class="logo-img">
+                <div class="company-info">
+                    <h1>SA AGRO <span style="color: var(--agro-green);">NIG LTD</span></h1>
+                    <p>RC: 1834091 | TIN: 2522420706336</p>
+                </div>
+            </div>
+            <div class="header-details">
+                NEPC RE NO: 0029672<br>
+                SCUML RN: SC 242100257<br>
+                HQ: KAIAMA, KWARA STATE
+            </div>
+        </header>
+
+        <div class="doc-title" contenteditable="true">Pro-Forma Invoice</div>
+
+        <main class="content">
+            <div class="meta-info">
+                <div class="info-block recipient" contenteditable="true" style="width: 50%;">
+                    <h3>Bill To:</h3>
+                    <strong>[Customer Name / Company]</strong><br>
+                    [Address Line 1]<br>
+                    [City, Country]<br>
+                    [Phone/Email]
+                </div>
+                <div class="info-block details" contenteditable="true" style="width: 40%; text-align: right;">
+                    <h3>Invoice Details:</h3>
+                    <strong>Invoice #:</strong> SA-PF-2026-001<br>
+                    <strong>Date:</strong> Feb 24, 2026<br>
+                    <strong>Validity:</strong> 7 Days<br>
+                    <strong>Currency:</strong> USD / NGN
+                </div>
+            </div>
+
+            <table class="invoice-table">
+                <thead>
+                    <tr>
+                        <th style="width: 50%;">Description of Goods</th>
+                        <th style="width: 15%;">Quantity (MT)</th>
+                        <th style="width: 15%;">Unit Price</th>
+                        <th style="width: 20%;">Total Amount</th>
+                    </tr>
+                </thead>
+                <tbody contenteditable="true">
+                    <tr>
+                        <td>Raw Cashew Nuts (Kaiama Export Quality)</td>
+                        <td>100</td>
+                        <td>$1,200.00</td>
+                        <td>$120,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>Soyabeans (Non-GMO, Grade A)</td>
+                        <td>50</td>
+                        <td>$650.00</td>
+                        <td>$32,500.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total-section">
+                <div class="total-row" contenteditable="true">
+                    Sub-Total: $152,500.00
+                </div>
+                <div style="font-size: 11px; color: #666;" contenteditable="true">
+                    Tax/Charges: $0.00 | <strong>Grand Total: $152,500.00</strong>
+                </div>
+            </div>
+
+            <div class="settlement-box" contenteditable="true">
+                <h4>Settlement Instructions (Keystone Bank)</h4>
+                <strong>Account Name:</strong> SA AGRO NIG LTD<br>
+                <strong>Account Number:</strong> 1012356877<br>
+                <strong>Sort Code:</strong> 082215017 (Kaiama Branch)<br>
+                <strong>Swift/BIC:</strong> [For International Transfers]
+            </div>
+
+            <div class="terms" contenteditable="true">
+                <strong>Standard Terms & Conditions:</strong><br>
+                1. <strong>Incoterms:</strong> FOB (Lagos Port) or Ex-Farm (Kaiama).<br>
+                2. <strong>Payment:</strong> 70% advance, 30% against BL or Loading Documents.<br>
+                3. <strong>Lead Time:</strong> 14 days from commitment.<br>
+                4. <strong>Governance:</strong> Subject to the laws of the Federal Republic of Nigeria.
+            </div>
+
+            <div class="signatories">
+                <div style="text-align: center; width: 45%;">
+                    <div style="border-top: 1px solid #333; margin-top: 30px; padding-top: 5px;">
+                        <strong>BASHIRU SULEIMAN</strong><br>
+                        <small>Managing Director / CEO</small>
+                    </div>
+                </div>
+                <div style="text-align: center; width: 45%;">
+                    <div style="border-top: 1px solid #333; margin-top: 30px; padding-top: 5px;">
+                        <strong>Corporate Seal</strong><br>
+                        <small>SA AGRO NIG LTD</small>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            26, GABASSAWA STREET, KAIAMA, KWARA STATE, NIGERIA | saagronigltd@gmail.com | +234 706 470 6084
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -20,22 +20,38 @@ To make your website accessible 24/7 globally, we highly recommend using **Verce
 
 ## 2. Professional Domain Setup (e.g., saagro.com.ng)
 
-To have a professional identity, you should connect a custom domain.
+To have a professional identity, follow these exact steps to connect your custom domain to Vercel:
 
-### Step 1: Buy a Domain
+### Step 0: Register Your Domain (Buy it)
 
-Use a registrar like **Whogohost** (excellent for `.com.ng` Nigerian domains) or **Namecheap**.
+Before you can connect the domain, you must own it. Since SA AGRO is a Nigerian company, a `.com.ng` or `.ng` domain is highly recommended for trust.
 
-### Step 2: Point to Your Server
+1. **Recommended Registrars**: Use **Whogohost**, **QServer**, or **Upperlink** (these are the best for `.com.ng`).
+2. **Cost**: A `.com.ng` domain usually costs around **₦1,500 – ₦2,500 per year**.
+3. **Search**: Look for `saagro.com.ng` or `saagronigltd.com.ng`.
 
-In your domain provider's dashboard, update the DNS settings:
+### Step 1: Add Domain to Vercel Dashboard
 
-- **For Vercel**: Create an **A Record** pointing `@` to `76.76.21.21`.
-- **For Netlify**: Add a **CNAME Record** pointing `www` to your Netlify site URL.
+1. In your **Vercel Dashboard**, click on your project (**sa-agro-website**).
+2. Go to **Settings** (top navigation bar) and click **Domains** on the left sidebar.
+3. Type your domain name (e.g., `saagro.com.ng`) into the box and click **Add**.
+4. Vercel will ask you which version to use. **Recommend choosing the one that includes `www` redirect.**
+
+### Step 2: Configure your Registrar (Whogohost/QServer/etc)
+
+Log in to where you bought your domain and go to the **DNS Management** or **Advanced DNS** section. Add these two records:
+
+| Type | Name | Value / Points To |
+| :--- | :--- | :--- |
+| **A Record** | @ | `216.198.79.1` |
+| **CNAME** | www | `cname.vercel-dns.com` |
+
+> [!TIP]
+> If you are using a `.com.ng` domain from a Nigerian registrar (like Whogohost), it might take 1–2 hours for the "Waiting for DNS" message in Vercel to turn green.
 
 ### Step 3: Verification
 
-Wait about 30 minutes for the internet to update. Your site will now be live at **<https://saagro.com.ng>**!
+Once the status in Vercel says **"Valid Configuration"** and **"SSL Issued"**, your site is officially live at your professional address!
 
 ---
 
