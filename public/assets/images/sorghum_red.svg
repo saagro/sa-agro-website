@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Background: dark earthy neutral -->
+  <rect width="800" height="600" fill="#2d1a0a"/>
+  
+  <defs>
+    <radialGradient id="grains-pile" cx="50%" cy="60%" r="60%">
+      <stop offset="0%" stop-color="#a33b1f"/>
+      <stop offset="60%" stop-color="#8a2e18"/>
+      <stop offset="100%" stop-color="#4d1508"/>
+    </radialGradient>
+    <radialGradient id="grain-red" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ce4a2d"/>
+      <stop offset="100%" stop-color="#7a2510"/>
+    </radialGradient>
+    <radialGradient id="grain-brown" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#b8451c"/>
+      <stop offset="100%" stop-color="#6b200a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Large grain pile base -->
+  <ellipse cx="400" cy="420" rx="360" ry="160" fill="url(#grains-pile)"/>
+
+  <!-- Many individual red sorghum grains scattered -->
+  <!-- Row 1 -->
+  <circle cx="150" cy="380" r="12" fill="url(#grain-red)"/>
+  <circle cx="210" cy="365" r="11" fill="url(#grain-brown)"/>
+  <circle cx="270" cy="375" r="12" fill="url(#grain-red)"/>
+  <circle cx="330" cy="358" r="11" fill="url(#grain-brown)"/>
+  <circle cx="390" cy="372" r="12" fill="url(#grain-red)"/>
+  <circle cx="450" cy="355" r="11" fill="url(#grain-brown)"/>
+  <circle cx="510" cy="370" r="12" fill="url(#grain-red)"/>
+  <circle cx="570" cy="358" r="11" fill="url(#grain-brown)"/>
+  <circle cx="630" cy="372" r="12" fill="url(#grain-red)"/>
+
+  <!-- Row 2 -->
+  <circle cx="180" cy="415" r="12" fill="url(#grain-brown)"/>
+  <circle cx="240" cy="400" r="11" fill="url(#grain-red)"/>
+  <circle cx="300" cy="418" r="12" fill="url(#grain-brown)"/>
+  <circle cx="360" cy="395" r="11" fill="url(#grain-red)"/>
+  <circle cx="420" cy="412" r="12" fill="url(#grain-brown)"/>
+  <circle cx="480" cy="398" r="11" fill="url(#grain-red)"/>
+  <circle cx="540" cy="415" r="12" fill="url(#grain-brown)"/>
+  <circle cx="600" cy="400" r="11" fill="url(#grain-red)"/>
+
+  <!-- Row 3 - near top -->
+  <circle cx="260" cy="325" r="11" fill="url(#grain-red)"/>
+  <circle cx="320" cy="310" r="12" fill="url(#grain-brown)"/>
+  <circle cx="380" cy="328" r="11" fill="url(#grain-red)"/>
+  <circle cx="440" cy="315" r="12" fill="url(#grain-brown)"/>
+  <circle cx="500" cy="330" r="11" fill="url(#grain-red)"/>
+  
+  <!-- Highlight dots for texture -->
+  <circle cx="350" cy="340" r="5" fill="#e27c5b" opacity="0.4"/>
+  <circle cx="450" cy="330" r="6" fill="#f09070" opacity="0.3"/>
+  <circle cx="190" cy="390" r="5" fill="#e27c5b" opacity="0.4"/>
+  <circle cx="580" cy="385" r="6" fill="#f09070" opacity="0.3"/>
+
+  <!-- Label area -->
+  <rect x="0" y="540" width="800" height="60" fill="#1a0a05" opacity="0.85"/>
+  <text x="400" y="572" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#f5d878" text-anchor="middle" letter-spacing="2">RED SORGHUM (DAWA)</text>
+  <text x="400" y="592" font-family="Georgia, serif" font-size="14" fill="#d4b85a" text-anchor="middle" opacity="0.9">Guinea Corn · Gluten-Free · High Antioxidants</text>
+</svg>

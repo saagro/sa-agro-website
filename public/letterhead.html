@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SA AGRO NIG LTD - Official Letterhead</title>
+    <style>
+        :root {
+            --forest-green: #1B4332;
+            --agro-green: #2D6A4F;
+            --grain-gold: #D4A373;
+            --agro-cream: #F8F9FA;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f0f0;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .letterhead {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            background: white;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Decorative Header Accent */
+        .header-accent {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150mm;
+            height: 30mm;
+            background: linear-gradient(135deg, var(--agro-green) 0%, var(--forest-green) 100%);
+            clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+            opacity: 0.05;
+            z-index: 1;
+        }
+
+        .header {
+            padding: 40px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--agro-green);
+            z-index: 2;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--agro-green);
+            background: white;
+        }
+
+        .company-info h1 {
+            margin: 0;
+            font-size: 28px;
+            color: var(--forest-green);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .company-info p {
+            margin: 5px 0 0;
+            color: var(--agro-green);
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .header-details {
+            text-align: right;
+            color: #666;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .header-details strong {
+            color: var(--forest-green);
+        }
+
+        /* Content Area */
+        .content {
+            padding: 40px 60px;
+            flex-grow: 1;
+            position: relative;
+        }
+
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            width: 350px;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+
+        .date-line {
+            text-align: right;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .recipient {
+            margin-bottom: 30px;
+        }
+
+        .body-text {
+            line-height: 1.7;
+            color: #333;
+            text-align: justify;
+            font-size: 14px;
+        }
+
+        .placeholder-text {
+            color: #555;
+            border: 1px dashed #ddd;
+            padding: 20px;
+            min-height: 150px;
+            background: #fafafa;
+        }
+
+        /* Signatories */
+        .signatories-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            gap: 60px;
+        }
+
+        .signatory-box {
+            width: 45%;
+        }
+
+        .sign-line {
+            border-top: 1px solid #333;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+
+        .signatory-name {
+            font-weight: bold;
+            color: var(--forest-green);
+            font-size: 14px;
+        }
+
+        .signatory-role {
+            font-size: 12px;
+            color: var(--agro-green);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 25px 60px;
+            background: var(--agro-cream);
+            border-top: 1px solid #eee;
+            color: #555;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            text-align: center;
+            font-size: 11px;
+        }
+
+        .footer-address {
+            font-weight: bold;
+            color: var(--forest-green);
+        }
+
+        .footer-contact {
+            display: flex;
+            gap: 30px;
+        }
+
+        .footer-contact-item strong {
+            color: var(--agro-green);
+        }
+
+        .footer-stripe {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(to right, var(--forest-green), var(--agro-green), var(--grain-gold));
+        }
+
+        @media print {
+            .letterhead {
+                margin: 0;
+                box-shadow: none;
+            }
+
+            body {
+                background: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="letterhead">
+        <div class="header-accent"></div>
+
+        <header class="header">
+            <div class="logo-section">
+                <img src="./logo_emblem.png" alt="Logo" class="logo-img">
+                <div class="company-info">
+                    <h1>SA AGRO <span style="color: var(--agro-green);">NIG LTD</span></h1>
+                    <p>RC: 1834091 | TIN: 2522420706336</p>
+                </div>
+            </div>
+            <div class="header-details">
+                <strong>EXPORTERS RE NO:</strong> 0029672<br>
+                <strong>SCUML RN:</strong> SC 242100257<br>
+                <strong>ISSUE DATE:</strong> 3RD NOV 2021<br>
+                <strong>GOVERNANCE:</strong> CAC STATUS COMPLIANT
+            </div>
+        </header>
+
+        <main class="content">
+            <img src="./logo_emblem.png" alt="Watermark" class="watermark">
+
+            <div class="date-line" contenteditable="true">
+                Date: <span>___________________</span>
+            </div>
+
+            <div class="recipient" contenteditable="true">
+                <strong>To:</strong><br>
+                <span>[Recipient Name/Title]</span><br>
+                <span>[Company Name]</span><br>
+                <span>[Address]</span>
+            </div>
+
+            <div class="body-text">
+                <p contenteditable="true"><strong>Subject: [Official Communication Heading]</strong></p>
+
+                <div class="placeholder-text" contenteditable="true">
+                    [Insert your official correspondence here. This template is designed for board-level decisions,
+                    government grant applications, and international industrial contracts.]
+                </div>
+
+                <!-- Signatories -->
+                <div class="signatories-section">
+                    <div class="signatory-box">
+                        <div class="sign-line"></div>
+                        <div class="signatory-name">BASHIRU SULEIMAN</div>
+                        <div class="signatory-role">Managing Director / CEO</div>
+                    </div>
+                    <div class="signatory-box">
+                        <div class="sign-line"></div>
+                        <div class="signatory-name">MEIMUNAH IBRAHIM HASSAN</div>
+                        <div class="signatory-role">Director / Secretary</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-address">
+                    HQ: 26, GABASSAWA STREET, KAIAMA, KWARA STATE, NIGERIA (POST CODE: 242101)
+                </div>
+                <div class="footer-contact">
+                    <div class="footer-contact-item">
+                        <strong>PHONE:</strong> +234 706 470 6084 | +234 706 853 3807
+                    </div>
+                    <div class="footer-contact-item">
+                        <strong>EMAIL:</strong> saagronigltd@gmail.com | sales@saagro.com.ng
+                    </div>
+                </div>
+            </div>
+            <div class="footer-stripe"></div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

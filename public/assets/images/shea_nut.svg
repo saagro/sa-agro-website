@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#5a4010"/>
+  <defs>
+    <radialGradient id="shea-pile" cx="50%" cy="58%" r="55%">
+      <stop offset="0%" stop-color="#d4b878"/>
+      <stop offset="65%" stop-color="#a88040"/>
+      <stop offset="100%" stop-color="#6a4818"/>
+    </radialGradient>
+    <radialGradient id="shea-nut" cx="38%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#ddc880"/>
+      <stop offset="100%" stop-color="#8a6028"/>
+    </radialGradient>
+    <radialGradient id="shea-nut2" cx="38%" cy="28%" r="65%">
+      <stop offset="0%" stop-color="#c8a860"/>
+      <stop offset="100%" stop-color="#785018"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="400" cy="430" rx="360" ry="155" fill="url(#shea-pile)"/>
+  <ellipse cx="140" cy="385" rx="18" ry="22" fill="url(#shea-nut)" transform="rotate(-10,140,385)"/>
+  <ellipse cx="195" cy="365" rx="17" ry="21" fill="url(#shea-nut2)" transform="rotate(15,195,365)"/>
+  <ellipse cx="250" cy="380" rx="18" ry="22" fill="url(#shea-nut)" transform="rotate(-5,250,380)"/>
+  <ellipse cx="305" cy="362" rx="17" ry="21" fill="url(#shea-nut2)" transform="rotate(20,305,362)"/>
+  <ellipse cx="360" cy="378" rx="18" ry="22" fill="url(#shea-nut)" transform="rotate(-12,360,378)"/>
+  <ellipse cx="415" cy="360" rx="17" ry="21" fill="url(#shea-nut2)" transform="rotate(8,415,360)"/>
+  <ellipse cx="470" cy="376" rx="18" ry="22" fill="url(#shea-nut)" transform="rotate(-18,470,376)"/>
+  <ellipse cx="525" cy="362" rx="17" ry="21" fill="url(#shea-nut2)" transform="rotate(14,525,362)"/>
+  <ellipse cx="580" cy="378" rx="18" ry="22" fill="url(#shea-nut)" transform="rotate(-6,580,378)"/>
+  <ellipse cx="635" cy="363" rx="17" ry="21" fill="url(#shea-nut2)" transform="rotate(19,635,363)"/>
+  <ellipse cx="688" cy="377" rx="18" ry="22" fill="url(#shea-nut)" transform="rotate(-11,688,377)"/>
+  <ellipse cx="115" cy="420" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(9,115,420)"/>
+  <ellipse cx="172" cy="407" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(-16,172,407)"/>
+  <ellipse cx="229" cy="422" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(21,229,422)"/>
+  <ellipse cx="286" cy="406" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(-4,286,406)"/>
+  <ellipse cx="343" cy="421" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(17,343,421)"/>
+  <ellipse cx="400" cy="405" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(-13,400,405)"/>
+  <ellipse cx="457" cy="420" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(10,457,420)"/>
+  <ellipse cx="514" cy="406" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(-21,514,406)"/>
+  <ellipse cx="571" cy="421" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(5,571,421)"/>
+  <ellipse cx="628" cy="407" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(-17,628,407)"/>
+  <ellipse cx="685" cy="421" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(12,685,421)"/>
+  <ellipse cx="210" cy="335" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(8,210,335)"/>
+  <ellipse cx="290" cy="318" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(-14,290,318)"/>
+  <ellipse cx="370" cy="332" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(20,370,332)"/>
+  <ellipse cx="450" cy="315" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(-7,450,315)"/>
+  <ellipse cx="530" cy="330" rx="17" ry="21" fill="url(#shea-nut)" transform="rotate(16,530,330)"/>
+  <ellipse cx="610" cy="318" rx="18" ry="22" fill="url(#shea-nut2)" transform="rotate(-11,610,318)"/>
+  <rect x="0" y="540" width="800" height="60" fill="#30200a" opacity="0.82"/>
+  <text x="400" y="578" font-family="Georgia, serif" font-size="28" font-weight="bold" fill="#f5d878" text-anchor="middle" letter-spacing="3">SHEA NUT</text>
+</svg>

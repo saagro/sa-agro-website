@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#4a3520"/>
+  <defs>
+    <radialGradient id="nut-base" cx="50%" cy="60%" r="55%">
+      <stop offset="0%" stop-color="#c8a050"/>
+      <stop offset="70%" stop-color="#a07828"/>
+      <stop offset="100%" stop-color="#5a3810"/>
+    </radialGradient>
+    <radialGradient id="cashew" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#d4b060"/>
+      <stop offset="100%" stop-color="#8c5e18"/>
+    </radialGradient>
+    <radialGradient id="cashew2" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#e0c070"/>
+      <stop offset="100%" stop-color="#9a6e28"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="400" cy="430" rx="360" ry="160" fill="url(#nut-base)"/>
+  <path d="M130,380 Q155,355 180,375 Q175,400 150,405 Q125,400 130,380Z" fill="url(#cashew)" transform="rotate(-10,155,382)"/>
+  <path d="M200,360 Q225,335 250,355 Q245,380 220,385 Q195,380 200,360Z" fill="url(#cashew2)" transform="rotate(15,225,362)"/>
+  <path d="M270,375 Q295,350 320,370 Q315,395 290,400 Q265,395 270,375Z" fill="url(#cashew)" transform="rotate(-5,295,377)"/>
+  <path d="M340,355 Q365,330 390,350 Q385,375 360,380 Q335,375 340,355Z" fill="url(#cashew2)" transform="rotate(20,365,357)"/>
+  <path d="M410,370 Q435,345 460,365 Q455,390 430,395 Q405,390 410,370Z" fill="url(#cashew)" transform="rotate(-12,435,372)"/>
+  <path d="M480,355 Q505,330 530,350 Q525,375 500,380 Q475,375 480,355Z" fill="url(#cashew2)" transform="rotate(8,505,357)"/>
+  <path d="M550,370 Q575,345 600,365 Q595,390 570,395 Q545,390 550,370Z" fill="url(#cashew)" transform="rotate(-18,575,372)"/>
+  <path d="M620,357 Q645,332 670,352 Q665,377 640,382 Q615,377 620,357Z" fill="url(#cashew2)" transform="rotate(12,645,359)"/>
+  <path d="M150,415 Q175,390 200,410 Q195,435 170,440 Q145,435 150,415Z" fill="url(#cashew2)" transform="rotate(7,175,417)"/>
+  <path d="M230,400 Q255,375 280,395 Q275,420 250,425 Q225,420 230,400Z" fill="url(#cashew)" transform="rotate(-15,255,402)"/>
+  <path d="M310,415 Q335,390 360,410 Q355,435 330,440 Q305,435 310,415Z" fill="url(#cashew2)" transform="rotate(18,335,417)"/>
+  <path d="M390,398 Q415,373 440,393 Q435,418 410,423 Q385,418 390,398Z" fill="url(#cashew)" transform="rotate(-8,415,400)"/>
+  <path d="M470,413 Q495,388 520,408 Q515,433 490,438 Q465,433 470,413Z" fill="url(#cashew2)" transform="rotate(14,495,415)"/>
+  <path d="M550,398 Q575,373 600,393 Q595,418 570,423 Q545,418 550,398Z" fill="url(#cashew)" transform="rotate(-20,575,400)"/>
+  <path d="M630,415 Q655,390 680,410 Q675,435 650,440 Q625,435 630,415Z" fill="url(#cashew2)" transform="rotate(6,655,417)"/>
+  <path d="M240,330 Q265,305 290,325 Q285,350 260,355 Q235,350 240,330Z" fill="url(#cashew)" transform="rotate(10,265,332)"/>
+  <path d="M360,315 Q385,290 410,310 Q405,335 380,340 Q355,335 360,315Z" fill="url(#cashew2)" transform="rotate(-12,385,317)"/>
+  <path d="M480,328 Q505,303 530,323 Q525,348 500,353 Q475,348 480,328Z" fill="url(#cashew)" transform="rotate(16,505,330)"/>
+  <path d="M600,315 Q625,290 650,310 Q645,335 620,340 Q595,335 600,315Z" fill="url(#cashew2)" transform="rotate(-7,625,317)"/>
+  <rect x="0" y="540" width="800" height="60" fill="#281508" opacity="0.8"/>
+  <text x="400" y="578" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#f0c858" text-anchor="middle" letter-spacing="2">RAW CASHEW NUT (RCN)</text>
+</svg>
