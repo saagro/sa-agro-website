@@ -43,7 +43,7 @@ Log in to where you bought your domain and go to the **DNS Management** or **Adv
 
 | Type | Name | Value / Points To |
 | :--- | :--- | :--- |
-| **A Record** | @ | `216.198.79.1` |
+| **A Record** | @ | `76.76.21.21` |
 | **CNAME** | www | `cname.vercel-dns.com` |
 
 > [!TIP]
@@ -53,9 +53,35 @@ Log in to where you bought your domain and go to the **DNS Management** or **Adv
 
 Once the status in Vercel says **"Valid Configuration"** and **"SSL Issued"**, your site is officially live at your professional address!
 
+### Step 4: Activate Professional Email (@saagro.com.ng)
+
+To ensure 100% reliability for your specific **GO54 Cloud Mail** plan, use these exact records in your domain dashboard:
+
+| Type | Priority | Value / Destination |
+| :--- | :--- | :--- |
+| **MX** | 10 | `mx001.go54.xion.oxcs.net` |
+| **MX** | 10 | `mx002.go54.xion.oxcs.net` |
+| **MX** | 10 | `mx003.go54.xion.oxcs.net` |
+| **MX** | 10 | `mx004.go54.xion.oxcs.net` |
+
+**Security Records (Spam Protection):**
+
+- **TXT (SPF)**: `v=spf1 include:spf.cloudeu.xion.oxcs.net ~all`
+- **TXT (DMARC)**: Host: `_dmarc` | Value: `v=DMARC1; p=reject`
+
 ---
 
-## 3. Paystack Payment Integration (Accepting Money)
+## 3. Administrative Login Hub
+
+Keep these links safe for your daily operations:
+
+- **Webmail Box**: [https://webmail.go54mail.com/appsuite](https://webmail.go54mail.com/appsuite)
+- **Account Dashboard**: [https://www.go54.com/clientarea.php](https://www.go54.com/clientarea.php)
+- **Vercel Hosting**: [https://vercel.com/saagro](https://vercel.com/saagro)
+
+---
+
+## 4. Paystack Payment Integration (Accepting Money)
 
 To activate digital payments for smaller orders or custom invoices:
 

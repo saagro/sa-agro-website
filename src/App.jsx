@@ -8,6 +8,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Consulting from './pages/Consulting'
 import Partnerships from './pages/Partnerships'
+import TermsOfService from './pages/TermsOfService'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/consulting" element={<Consulting />} />
             <Route path="/partnerships" element={<Partnerships />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
           </Routes>
         </main>
         <Footer />
