@@ -64,6 +64,10 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="text-agro-grain shrink-0" size={20} />
+                                <span className="text-gray-400">info@saagro.com.ng</span>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <Mail className="text-agro-grain shrink-0" size={20} />
                                 <span className="text-gray-400">admin@saagro.com.ng</span>
                             </li>
                         </ul>

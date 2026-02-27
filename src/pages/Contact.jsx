@@ -57,6 +57,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-bold text-agro-forest text-xl mb-1">Email Inquiry</h4>
+                                        <p className="text-gray-500">info@saagro.com.ng</p>
                                         <p className="text-gray-500">sales@saagro.com.ng</p>
                                         <p className="text-gray-500">admin@saagro.com.ng</p>
                                     </div>
