@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, Leaf } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Linkedin, Leaf, Send, Music } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -23,6 +23,8 @@ const Footer = () => {
                             <a href="https://twitter.com/saagronigltd" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-full hover:bg-agro-green transition-all hover:-translate-y-1"><Twitter size={20} /></a>
                             <a href="https://instagram.com/suleimanbashiru9" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-full hover:bg-agro-green transition-all hover:-translate-y-1"><Instagram size={20} /></a>
                             <a href="https://linkedin.com/in/SuleimanBashiru" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-full hover:bg-agro-green transition-all hover:-translate-y-1"><Linkedin size={20} /></a>
+                            <a href="https://tiktok.com/@saagronigltd" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-full hover:bg-agro-green transition-all hover:-translate-y-1"><Music size={20} /></a>
+                            <a href="https://t.me/saagronigltd" target="_blank" rel="noopener noreferrer" className="p-2 bg-white/5 rounded-full hover:bg-agro-green transition-all hover:-translate-y-1"><Send size={20} /></a>
                         </div>
                     </div>
 

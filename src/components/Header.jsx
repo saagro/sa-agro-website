@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Leaf, ShoppingCart, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Menu, X, Leaf, ShoppingCart, Facebook, Instagram, Twitter, Linkedin, Send, Music } from 'lucide-react';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +57,8 @@ const Header = () => {
                         <a href="https://twitter.com/saagronigltd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-agro-green transition-colors"><Twitter size={18} /></a>
                         <a href="https://instagram.com/suleimanbashiru9" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-agro-green transition-colors"><Instagram size={18} /></a>
                         <a href="https://linkedin.com/in/SuleimanBashiru" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-agro-green transition-colors"><Linkedin size={18} /></a>
+                        <a href="https://tiktok.com/@saagronigltd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-agro-green transition-colors"><Music size={18} /></a>
+                        <a href="https://t.me/saagronigltd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-agro-green transition-colors"><Send size={18} /></a>
                     </div>
                     <Link
                         to="/catalog"
