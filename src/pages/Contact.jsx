@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageSquare, Clock, Facebook, Instagram, Twitter, Linkedin, Music } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageSquare, Clock, Facebook, Instagram, Twitter, Linkedin, Music, MessageCircle } from 'lucide-react';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -73,6 +73,9 @@ const Contact = () => {
                                     </a>
                                     <a href="https://twitter.com/saagronigltd" target="_blank" rel="noopener noreferrer" className="p-4 bg-white rounded-2xl shadow-sm text-agro-green hover:bg-agro-green hover:text-white transition-all">
                                         <Twitter size={24} />
+                                    </a>
+                                    <a href="https://wa.me/2347064706084" target="_blank" rel="noopener noreferrer" className="p-4 bg-white rounded-2xl shadow-sm text-agro-green hover:bg-agro-green hover:text-white transition-all">
+                                        <MessageCircle size={24} />
                                     </a>
                                     <a href="https://instagram.com/suleimanbashiru9" target="_blank" rel="noopener noreferrer" className="p-4 bg-white rounded-2xl shadow-sm text-agro-green hover:bg-agro-green hover:text-white transition-all">
                                         <Instagram size={24} />
